@@ -18,9 +18,10 @@ use Illuminate\Support\Facades\Artisan;
 
 Route::get('/', [PostController::class, 'index']);
 Route::get('/mysql', function () {
-    Artisan::call('migrate:rollback', ['--force' => true]);
-    Artisan::call('migrate', ['--force' => true]);
-    Artisan::call('db:seed', ['--force' => true]);
+    // Artisan::call('migrate:rollback', ['--force' => true]);
+    // Artisan::call('migrate', ['--force' => true]);
+    // Artisan::call('db:seed', ['--force' => true]);
+    Artisan::call('migrate:fresh', ['--seed' => true]);
 });
 
 Route::get('/create', function () {
