@@ -17,7 +17,7 @@
 <body>
 
   <div class="container" style="margin-top: 50px;">
-    <img src="public/images/larapel.png">
+    <img src="{{url('/images/larapel.png')}}" alt="Image" height="50">
     <h3 class="text-center text-danger"><b>Laravel CRUD With Multiple Image Upload</b> </h3>
     <a href="/create" class="btn btn-outline-success">Add New Post</a>
 
